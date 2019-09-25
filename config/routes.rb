@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  post '/callback' => 'nogibot#callback'
+  post '/callback' => 'rain#callback'
 end
