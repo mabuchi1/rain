@@ -42,7 +42,7 @@ class RainController < ApplicationController
           when Line::Bot::Event::MessageType::Text
             message = {
               type: 'text',
-              text: xpath
+              text: event.message['text']
             }
             client.reply_message(event['replyToken'], message)
           end
